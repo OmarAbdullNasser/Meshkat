@@ -1,0 +1,358 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Readex Pro", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  direction: rtl;
+  word-wrap: break-word;
+  word-break: break-word;
+}
+.navbar {
+  background: #050633;
+  border-radius: 24px;
+  width: 100%;
+  .navbar-toggler {
+    background: #fff;
+  }
+  .navbar-nav {
+    gap: 48px;
+  }
+  .nav-link.active {
+    color: #fb5607;
+  }
+  .nav-link:hover {
+    color: #fb5607;
+  }
+  .user_info {
+    color: #fff;
+    margin-right: 0.5rem;
+    img {
+      width: 32px;
+    }
+    button {
+      color: #fff;
+    }
+  }
+  .lang {
+    color: #fff;
+  }
+}
+
+.Card {
+  padding-top: 28px;
+  gap: 250px;
+  border-radius: 16px;
+
+  .freelogo {
+    padding: 4px 15px;
+    border-radius: 8px 0px 0px 8px;
+    background: #fb5607;
+  }
+  .infoCourse {
+    padding: 10px;
+    width: 100%;
+    direction: ltr;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    h5 {
+      font-size: 18px;
+    }
+    span {
+      color: #d0d5dd;
+    }
+    img {
+      width: 32px;
+      height: 32px;
+      margin-left: 133px;
+    }
+  }
+}
+.card-1 {
+  background: url("/Assets/card1.png") lightgray 50% / cover no-repeat;
+}
+.card-2 {
+  background: url("/Assets/card2.png") lightgray 50% / cover no-repeat;
+}
+.card-3 {
+  background: url("/Assets/card3.png") lightgray 50% / cover no-repeat;
+}
+.card-4 {
+  background: url("/Assets/card4.png") lightgray 50% / cover no-repeat;
+}
+.setting {
+  background: #fff;
+  border-radius: 16px;
+
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+#btn_1 {
+  anchor-name: --btn_1;
+}
+#panal {
+  position-anchor: --btn_1;
+  position: absolute;
+  inset-area: bottom;
+}
+
+/*--------------------------------------------------Home-----------------------------------*/
+.Hero {
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.2) 100%
+    ),
+    url("/Assets/Hero/bgHero2.png") no-repeat center center, #fff;
+  background-size: cover;
+
+  color: #fff;
+
+  .HeroTitle {
+    font-size: 48px;
+    gap: 100px;
+    h1 {
+      line-height: 160%;
+    }
+    .btns {
+      display: flex;
+      gap: 10px;
+      .start-btn {
+        color: #fff;
+        border-radius: 16px;
+        background: #fb5607;
+      }
+      .discover-btn {
+        color: #fff;
+        border-radius: 16px;
+        border: 1px solid #fff;
+        background: rgba(255, 255, 255, 0.4);
+        backdrop-filter: blur(2px);
+      }
+    }
+  }
+}
+
+.Free {
+  .bar {
+    .arrow {
+      display: flex;
+      gap: 29px;
+      .right-btn {
+        border-radius: 1000px;
+        border: 1.5px solid #050633;
+        padding: 10px;
+        background: #fff;
+      }
+      .left-btn {
+        border-radius: 1000px;
+        border: 1.5px solid #9e9e9e;
+        padding: 10px;
+        background: #fff;
+        color: #9e9e9e;
+      }
+    }
+    .progess {
+      border-radius: 100px;
+      background: #cecece;
+      width: 150px;
+      height: 11px;
+      direction: ltr;
+      .balck {
+        height: 11px;
+        width: 50%;
+        background: #000;
+        border-radius: 100px;
+      }
+    }
+  }
+}
+
+.about_us {
+  .Img {
+    border-radius: 16px;
+    background: url("/Assets/about-us.png") lightgray 50% / cover no-repeat;
+    height: 568px;
+  }
+  .Text {
+    button {
+      margin-top: 1rem;
+      color: #fff;
+      border-radius: 16px;
+      background: #fb5607;
+      padding: 16px;
+      font-size: 25px;
+    }
+  }
+}
+
+.Footer {
+  background: #050633;
+  position: relative;
+  h3 {
+    color: #fff;
+  }
+  p {
+    color: #b9b9c6;
+  }
+
+  .logo {
+    color: #e2e2e2;
+    font-size: 12px;
+  }
+  .soical_media {
+    display: flex;
+    padding-top: 32px;
+    border-top: 1px solid #e4e7ec;
+    color: #fff;
+    font-size: 24px;
+    gap: 30px;
+  }
+  .sideicon {
+    position: absolute;
+    left: 0;
+    top: 163px;
+  }
+}
+/*--------------------------------------------------Home-----------------------------------*/
+
+/*----------------------------CourseList-----------------------------------------------------*/
+
+.CourseList {
+  .List {
+    height: fit-content;
+    border-radius: 16px;
+    border: 1px solid #e4e4e4;
+    a {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+      i {
+        font-size: 20px;
+      }
+      &:hover {
+        color: #fb5607;
+      }
+      &.active {
+        color: #fb5607;
+      }
+    }
+  }
+  .Course {
+    p {
+      font-size: 16px;
+      color: #868686;
+    }
+  }
+}
+/*----------------------------CourseList-----------------------------------------------------*/
+
+/*-------------------------------------memership-----------------------------------------*/
+.memership {
+  position: relative;
+  .uppericon {
+    position: absolute;
+    right: 0;
+    top: 16px;
+    z-index: -1;
+    transform: rotate(197deg);
+  }
+  .lowericon {
+    position: absolute;
+    left: 0;
+    top: 400px;
+    z-index: -1;
+  }
+  p {
+    color: #5d5d5d;
+  }
+  .Subscripation {
+    border-radius: 20px;
+    border: 1px solid #b9b9c6;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.05);
+    direction: ltr;
+    .head {
+      h1 {
+        font-size: 50px;
+        span {
+          font-size: 16px;
+        }
+      }
+    }
+    .body {
+      .info {
+        h3 {
+          color: #fb5607;
+        }
+      }
+    }
+  }
+  .active {
+    background: #fff;
+    .ads {
+      p {
+        i {
+          color: #fb5607;
+          font-size: 25px;
+        }
+      }
+    }
+    .subBtn {
+      button {
+        border-radius: 16px;
+        background: #fb5607;
+        color: #fff;
+        padding: 12px 16px;
+      }
+    }
+  }
+  .disable {
+    background: #e9e9e9;
+    .ads {
+      p {
+        i {
+          color: #5d5d5d;
+          font-size: 25px;
+        }
+      }
+    }
+    .subBtn {
+      button {
+        border-radius: 16px;
+        background: #5d5d5d;
+        color: #fff;
+        padding: 12px 16px;
+      }
+    }
+  }
+}
+/*-------------------------------------memership-----------------------------------------*/
+@media screen and (max-width: 998.1px) {
+  .navbar {
+    form {
+      width: 100%;
+    }
+  }
+  .Hero {
+    height: auto;
+    .HeroTitle {
+      gap: 0;
+    }
+  }
+}
+@media screen and (min-width: 999px) {
+  .navbar {
+    form {
+      width: 25%;
+    }
+  }
+  .Hero {
+    height: 691px;
+  }
+}

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Meshkat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@160..700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Boostsrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!--Main style-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Navbar-->
+    <div class="Navbar container">
+      <nav class="navbar navbar-expand-lg mt-5">
+        <div class="container">
+          <!--Logo-->
+          <a class="navbar-brand" href="/index.html">
+            <img
+              src="/Assets/logo.png"
+              alt=""
+              width="103.55px"
+              height="48.13px"
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse text-center"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav text-center me-4">
+              <li class="nav-item">
+                <a
+                  class="nav-link text-white active"
+                  aria-current="page"
+                  href="/index.html"
+                  >الرئيسية</a
+                >
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">من نحن؟</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/Course.html">دورات</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-white" href="/memership.html"
+                  >العضوية
+                </a>
+              </li>
+            </ul>
+
+            <form class="mx-auto" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="ما الذي تبحث عنه؟"
+                aria-label="Search"
+              />
+            </form>
+            <div
+              class="box me-4 d-flex align-items-center justify-content-between"
+            >
+              <div
+                class="lang d-flex justify-content-center align-items-center ms-lg-4 my-4"
+              >
+                <img src="/Assets/Hero/global.svg" alt="" />
+                <span class="me-2">EN</span>
+              </div>
+              <img src="/Assets/Hero/mdi_cart.svg" alt="" />
+            </div>
+            <div
+              class="user_info d-flex align-items-center justify-content-center"
+            >
+              <img src="/Assets/Hero/avater.png" alt="" />
+              <h6 class="mx-3">معاذ مجدي</h6>
+              <button class="btn" id="btn_1" popovertarget="panal">
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+              <div class="setting p-3" popover id="panal">
+                <div>
+                  <a href="#" class="mb-3"
+                    ><i class="fa-regular fa-user"></i> <span>حسابي</span></a
+                  >
+                </div>
+
+                <div>
+                  <a href="#" class="mb-3"
+                    ><i class="fa-regular fa-address-card"></i>
+                    <span>لوحة التحكم</span></a
+                  >
+                </div>
+                <div>
+                  <a href="#" class="mb-3"
+                    ><i class="fa-solid fa-address-book"></i>
+                    <span>دوراتي</span></a
+                  >
+                </div>
+                <div>
+                  <a href="#" class="mb-3"
+                    ><i class="fa-solid fa-arrow-right-from-bracket"></i
+                    ><span>تسجيل خروج </span></a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Navbar-->
+
+    <!--CourseList-->
+    <div class="CourseList pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="List col-12 col-lg-3 p-4">
+            <a href="/Course.html" class="all my-3 d-flex align-items-center">
+              <i class="fa-solid fa-list"></i>
+              <span class="me-3">جميع الدورات </span>
+            </a>
+            <a
+              href="/OwnCoures.html"
+              class="member active my-3 d-flex align-items-center"
+            >
+              <i class="fa-brands fa-meetup"></i>
+              <span class="me-3"> الدورات الخاصة بالعضوية </span>
+            </a>
+            <a href="/myCourse.html" class="my my-3 d-flex align-items-center">
+              <i class="fa-regular fa-user"></i>
+              <span class="me-3"> دوراتي </span>
+            </a>
+            <a
+              href="/FreeCourse.html"
+              class="free my-3 d-flex align-items-center"
+            >
+              <i class="fa-solid fa-gift"></i>
+              <span class="me-3"> الدورات المجانية </span>
+            </a>
+          </div>
+
+          <div class="Course col-12 col-lg-9">
+            <h1>الدورات الخاصة بالعضوية</h1>
+            <p class="mt-4">
+              "دورات أونلاين للمهندسين المعماريين المبتكرين ومصممي البرمجة
+              المعمارية."
+            </p>
+            <div class="row mb-3">
+              <div class="col-12 col-lg-4 mb-3">
+                <div
+                  class="Card card-1 d-flex flex-column align-items-start justify-content-start"
+                >
+                  <div class="freelogo">
+                    <span>مجانا</span>
+                  </div>
+
+                  <div class="infoCourse">
+                    <h5 class="my-4">Revit Flow 1.0 - Digital memper</h5>
+                    <span>Moaz Magdy</span>
+                    <img src="/Assets/Hero/avater.png" alt="" />
+                    <div class="info mt-4 d-flex justify-content-between">
+                      <div class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Oct 12, 2024</span>
+                      </div>
+                      <div class="tool">
+                        <i class="fa-solid fa-video"></i>
+                        <span>On Zoom</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mb-3">
+                <div
+                  class="Card card-2 d-flex flex-column align-items-start justify-content-start"
+                >
+                  <div class="freelogo">
+                    <span>مجانا</span>
+                  </div>
+
+                  <div class="infoCourse">
+                    <h5 class="my-4">Revit Flow 1.0 - Digital memper</h5>
+                    <span>Moaz Magdy</span>
+                    <img src="/Assets/Hero/avater.png" alt="" />
+                    <div class="info mt-4 d-flex justify-content-between">
+                      <div class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Oct 12, 2024</span>
+                      </div>
+                      <div class="tool">
+                        <i class="fa-solid fa-video"></i>
+                        <span>On Zoom</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mb-3">
+                <div
+                  class="Card card-3 d-flex flex-column align-items-start justify-content-start"
+                >
+                  <div class="freelogo">
+                    <span>مجانا</span>
+                  </div>
+
+                  <div class="infoCourse">
+                    <h5 class="my-4">Revit Flow 1.0 - Digital memper</h5>
+                    <span>Moaz Magdy</span>
+                    <img src="/Assets/Hero/avater.png" alt="" />
+                    <div class="info mt-4 d-flex justify-content-between">
+                      <div class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Oct 12, 2024</span>
+                      </div>
+                      <div class="tool">
+                        <i class="fa-solid fa-video"></i>
+                        <span>On Zoom</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-3">
+              <div class="col-12 col-lg-4 mb-3">
+                <div
+                  class="Card card-1 d-flex flex-column align-items-start justify-content-start"
+                >
+                  <div class="freelogo">
+                    <span>مجانا</span>
+                  </div>
+
+                  <div class="infoCourse">
+                    <h5 class="my-4">Revit Flow 1.0 - Digital memper</h5>
+                    <span>Moaz Magdy</span>
+                    <img src="/Assets/Hero/avater.png" alt="" />
+                    <div class="info mt-4 d-flex justify-content-between">
+                      <div class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Oct 12, 2024</span>
+                      </div>
+                      <div class="tool">
+                        <i class="fa-solid fa-video"></i>
+                        <span>On Zoom</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mb-3">
+                <div
+                  class="Card card-2 d-flex flex-column align-items-start justify-content-start"
+                >
+                  <div class="freelogo">
+                    <span>مجانا</span>
+                  </div>
+
+                  <div class="infoCourse">
+                    <h5 class="my-4">Revit Flow 1.0 - Digital memper</h5>
+                    <span>Moaz Magdy</span>
+                    <img src="/Assets/Hero/avater.png" alt="" />
+                    <div class="info mt-4 d-flex justify-content-between">
+                      <div class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Oct 12, 2024</span>
+                      </div>
+                      <div class="tool">
+                        <i class="fa-solid fa-video"></i>
+                        <span>On Zoom</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-4 mb-3">
+                <div
+                  class="Card card-3 d-flex flex-column align-items-start justify-content-start"
+                >
+                  <div class="freelogo">
+                    <span>مجانا</span>
+                  </div>
+
+                  <div class="infoCourse">
+                    <h5 class="my-4">Revit Flow 1.0 - Digital memper</h5>
+                    <span>Moaz Magdy</span>
+                    <img src="/Assets/Hero/avater.png" alt="" />
+                    <div class="info mt-4 d-flex justify-content-between">
+                      <div class="time">
+                        <i class="fa-regular fa-clock"></i>
+                        <span>Oct 12, 2024</span>
+                      </div>
+                      <div class="tool">
+                        <i class="fa-solid fa-video"></i>
+                        <span>On Zoom</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--CourseList-->
+    <!--Boostsrap-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="main.js"></script>
+  </body>
+</html>
